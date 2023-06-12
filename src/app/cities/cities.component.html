@@ -1,0 +1,23 @@
+<div class="cities">
+    <mat-card class="example-card">
+        <mat-card-header>
+            Cities
+        </mat-card-header>
+
+        <mat-card-content>
+        </mat-card-content>
+
+        <mat-card-actions>
+            <div class="example-button-row">
+                <button *ngFor="let city of cityData" routerLink="{{city.id}}" class="btn-width" mat-fab extended
+                    color="primary">
+                    <pre>{{city.city}}</pre>
+                </button>
+            </div>
+        </mat-card-actions>
+    </mat-card>
+
+    <div class="city-data">
+        <router-outlet></router-outlet>
+    </div>
+</div>

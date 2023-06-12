@@ -1,0 +1,28 @@
+<mat-card class="posts">
+    <mat-card-actions>
+        <div class="active-city">
+            <div class="city-info">
+                <mat-card-title>{{cityData[cityId].city}}</mat-card-title>
+                <mat-card-subtitle>{{cityData[cityId].country}}</mat-card-subtitle>
+                <div class="city-details">
+
+                    <img class="city-image" src="{{cityData[cityId].imgAddres}}">
+
+                    <div class="city-weather">
+                        <h3>Weather</h3>
+                        <p>Today's High: {{cityData[cityId]?.weather?.main.temp_max}}&deg;F</p>
+                        <p>Today's Low: {{cityData[cityId]?.weather?.main.temp_min}}&deg;F</p>
+                        <p>Description: It Feels Like {{cityData[cityId]?.weather?.main.feels_like}}&deg;F with humidity of
+                            {{cityData[cityId]?.weather?.main.humidity}}% </p>
+                        <i class="fas fa-sun"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="city-posts">
+                <mat-card-title>Posts</mat-card-title>
+                <app-post-card></app-post-card>
+            </div>
+        </div>
+    </mat-card-actions>
+</mat-card>

@@ -1,0 +1,22 @@
+.active-post {
+    padding: 10vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.example-card {
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgb(216, 187, 187);
+}
+
+.title {
+    margin-left: 8px;
+    color: white;
+}
+
+.content {
+    cursor: not-allowed;
+    color: #d2c9c9;
+}
